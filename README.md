@@ -2,7 +2,6 @@
 python script for showing currency pair prices
 
 ## Dependencies:
-
 bs4  
 requests  
 argparse  
