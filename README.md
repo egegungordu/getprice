@@ -1,5 +1,5 @@
 # getprice
-python script for showing currency pair prices
+python script for showing currency pair pricess
 
 ## Dependencies:
 bs4  
