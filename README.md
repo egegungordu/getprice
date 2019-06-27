@@ -1,13 +1,13 @@
 # getprice
 python script for showing currency pair prices
 
-## required libraries:
+## Dependencies:
 
 bs4  
 requests  
 argparse  
 
-## usage:
+## Usage:
 ##### Python3
 ```
 python3 getprice.py <currency_pair>
