@@ -1,5 +1,7 @@
 # getprice
-python script for showing currency pair pricess
+Python script for showing currency pair prices. 
+Scrapes data from [Yahoo Finance](finance.yahoo.com). 
+
 
 ## Dependencies:
 bs4  
