@@ -13,7 +13,7 @@ argparse
 ```
 python3 getprice.py <currency_pair>
 ```
-#### optional arguments:
+##### optional arguments:
 `-a <amount>`
 
 ## To-Do:
