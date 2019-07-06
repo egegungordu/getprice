@@ -13,6 +13,9 @@ argparse
 ```
 python3 getprice.py <currency_pair>
 ```
+#### optional arguments:
+-a <amount>
+
 ## To-Do:
 - [x] add error handlers  
 - [x] make it importable  
