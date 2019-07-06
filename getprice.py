@@ -21,7 +21,7 @@ def getprice(currency, amount):
 		price = soup.find_all('div', {'class':'My(6px) Pos(r) smartphone_Mt(6px)'})[0].find('span').text
 	except IndexError:
 		return
-	return float(price) * amount
+	return float(price.replace(',','')) * amount
 
 if(__name__ == "__main__"):
 	Main()
