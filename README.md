@@ -14,7 +14,7 @@ argparse
 python3 getprice.py <currency_pair>
 ```
 #### optional arguments:
--a <amount>
+`-a <amount>
 
 ## To-Do:
 - [x] add error handlers  
