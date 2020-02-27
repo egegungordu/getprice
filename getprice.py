@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import bs4
 import requests
 import argparse
@@ -15,10 +17,10 @@ def getprice(currency, amount):
 	#send get request to yahoo
 	url = 'https://finance.yahoo.com/quote/{}%3DX?p={}%3DX'.format(currency,currency)
 	r = requests.get(url)
-	soup = bs4.BeautifulSoup(r.text,"xml")
+	soup = bs4.BeautifulSoup(r.text,"lxml")
 	try:
 		#find currency element from xml
-		price = soup.find_all('div', {'class':'My(6px) Pos(r) smartphone_Mt(6px)'})[0].find('span').text
+		price = soup.find_all('div',{"class":"My(6px) Pos(r) smartphone_Mt(6px)"})[0].find('span').text
 	except IndexError:
 		return
 	return float(price.replace(',','')) * amount
